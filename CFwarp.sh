@@ -307,12 +307,12 @@ sudo iptables -P INPUT ACCEPT
 sudo iptables -P FORWARD ACCEPT
 sudo iptables -P OUTPUT ACCEPT
 sudo iptables -F
-curl -fsSL https://cdn.jsdelivr.net/gh/phlinhng/v2ray-tcp-tls-web@main/src/xwall.sh -o ~/xwall.sh && bash ~/xwall.sh
+curl -fsSL https://raw.githubusercontent.com/Alone7707/CFwarp/main/xwall.sh -o ~/xwall.sh && bash ~/xwall.sh
 }
 
 
 function Netflix(){
-wget -O nf https://cdn.jsdelivr.net/gh/sjlleo/netflix-verify/CDNRelease/nf_2.60_linux_amd64 && chmod +x nf && clear && ./nf -method full
+wget -O nf https://raw.githubusercontent.com/Alone7707/CFwarp/main/nf_2.60_linux_amd64 && chmod +x nf && clear && ./nf -method full
 }
 
 function reboot(){
