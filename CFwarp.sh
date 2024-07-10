@@ -180,12 +180,12 @@ exit 1
 fi
 	
 if [[ ${bit} == "x86_64" ]]; then
-sudo wget -N https://cdn.jsdelivr.net/gh/kkkyg/CFwarp/wgcf-amd -O /usr/local/bin/wgcf && chmod +x /usr/local/bin/wgcf         
+sudo wget -N https://raw.githubusercontent.com/Alone7707/CFwarp/main/wgcf-amd -O /usr/local/bin/wgcf && chmod +x /usr/local/bin/wgcf         
 elif [[ ${bit} == "aarch64" ]]; then
 sudo wget -N https://cdn.jsdelivr.net/gh/kkkyg/CFwarp/wgcf-arm -O /usr/local/bin/wgcf && chmod +x /usr/local/bin/wgcf
 fi
 if [[ ${vi} == " lxc" || ${vi} == " OpenVZ" ]]; then
-wget -N https://cdn.jsdelivr.net/gh/kkkyg/CFwarp/wireguard-go -O /usr/bin/wireguard-go && chmod +x /usr/bin/wireguard-go
+wget -N https://raw.githubusercontent.com/Alone7707/CFwarp/main/wireguard-go -O /usr/bin/wireguard-go && chmod +x /usr/bin/wireguard-go
 fi
          
 echo | wgcf register
@@ -257,7 +257,7 @@ blue " WARP状态+IPv6地址+IP国家: ${WARPIPv6Status}"
 }
 
 function upcore(){
-wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/kkkyg/CFwarp/ucore.sh && chmod +x ucore.sh && ./ucore.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/Alone7707/CFwarp/main/ucore.sh && chmod +x ucore.sh && ./ucore.sh
 }
 
 function iptables(){
