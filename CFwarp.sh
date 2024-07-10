@@ -180,9 +180,9 @@ exit 1
 fi
 	
 if [[ ${bit} == "x86_64" ]]; then
-wget -N https://cdn.jsdelivr.net/gh/kkkyg/CFwarp/wgcf-amd -O /usr/local/bin/wgcf && chmod +x /usr/local/bin/wgcf         
+sudo wget -N https://cdn.jsdelivr.net/gh/kkkyg/CFwarp/wgcf-amd -O /usr/local/bin/wgcf && chmod +x /usr/local/bin/wgcf         
 elif [[ ${bit} == "aarch64" ]]; then
-wget -N https://cdn.jsdelivr.net/gh/kkkyg/CFwarp/wgcf-arm -O /usr/local/bin/wgcf && chmod +x /usr/local/bin/wgcf
+sudo wget -N https://cdn.jsdelivr.net/gh/kkkyg/CFwarp/wgcf-arm -O /usr/local/bin/wgcf && chmod +x /usr/local/bin/wgcf
 fi
 if [[ ${vi} == " lxc" || ${vi} == " OpenVZ" ]]; then
 wget -N https://cdn.jsdelivr.net/gh/kkkyg/CFwarp/wireguard-go -O /usr/bin/wireguard-go && chmod +x /usr/bin/wireguard-go
